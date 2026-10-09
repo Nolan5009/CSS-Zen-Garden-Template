@@ -21,10 +21,27 @@ div.page-wrapper h3{
     background-image: url('images/pink-SubTitle.png');
     background-repeat: no-repeat;
     background-size: contain;
+    font-size: 70px;
     padding: 100px;
     z-index: 1;
+    color: white;
 }
 
 div.page-wrapper p{
+    color: white;
     font-family: "Roboto Slab", serif;
+    background-image: url('images/textBlue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 966px;
+    height: 11.4vh;
+    width: 39.2vw;
+    margin-left: -1vw;
+    padding-left: 9vw;
+}
+
+
+a title:visited {
+    color: green;
 }
