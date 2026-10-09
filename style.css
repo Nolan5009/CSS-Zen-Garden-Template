@@ -2,18 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
+    background-image: url('images/backgroundImg.png');
     background-color: black;
     overflow-x: hidden;
-}
-
-body .intro{
-    background-image: url('images/backgroundImg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     resize: both;
     height: 200vh;
+}
 
+.preamble > h3 ::after{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    content: "";
+    position: absolute;
+}
+
+div.pagewrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+body .intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+}
+
+div.supporting{
+    display: flex;
+    flex-direction: column;
 }
 
 div.page-wrapper h3{
@@ -21,26 +46,32 @@ div.page-wrapper h3{
     background-image: url('images/pink-SubTitle.png');
     background-repeat: no-repeat;
     background-size: contain;
-    font-size: 70px;
+    font-size: 140px;
+    text-align: center;
     padding: 100px;
     z-index: 1;
+    width: 52.5vw;
+    height: 377px;
     color: white;
 }
 
-div.page-wrapper p{
-    color: white;
-    font-family: "Roboto Slab", serif;
+.preamble > p::after {
     background-image: url('images/textBlue.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: 966px;
-    height: 11.4vh;
+    position: absolute;
+    content: "";
+}
+
+div.page-wrapper p{
+    color: white;
+    font-family: "Roboto Slab", serif;
     width: 39.2vw;
     margin-left: -1vw;
     padding-left: 9vw;
 }
-
 
 a title:visited {
     color: green;
