@@ -8,6 +8,21 @@ body{
 }
 /* just setting the background color and removing the bottom scroll */
 
+/* body.page-wrapper{
+    position:relative
+    display: flex;
+}
+
+*:not(.design-selection, .resources){
+    justify-content: flex-start;
+}
+
+page-wrapper .design-selection, .resources{
+    position:absolute;
+    justify-content: flex-end;
+    order: 1;
+} */
+
 *:link:not('.viewall a'){
     background-color: yellow;
 }
@@ -36,6 +51,7 @@ header[role="banner"] h1:first-child{
 } */
 
 div.pagewrapper {
+    position: absolute;
     display: flex;
     flex-flow: column;
 }
@@ -58,39 +74,6 @@ div.supporting{
 }
 
 
-/* div p:first-of-type{
-    background-image: url('images/textBlue.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 966px; 
-    position: absolute;
-    text-align: center;
-    width: 67vw;
-    }
-    
-    div.preamble p:first-of-type::after{
-        content: "Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible";
-        }
-        
-        div p:not(p:first-of-type){
-            opacity: 0%;
-            
-            } */
-
-/* div.page-wrapper h3{
-    font-family: "Passion One", sans-serif;
-    background-image: url('images/pink-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-size: 140px;
-    text-align: center;
-    padding: 100px;
-    z-index: 1;
-    width: 52.5vw;
-    height: 377px;
-    color: white;
-} */
 
 .viewall a{
     position: absolute;
@@ -101,13 +84,21 @@ div.supporting{
     justify-content: center;
     align-items: flex-start;
     font-size: 70px;  
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    color: white;
     padding: 100px;
     left: 23%;
     text-align: center;
     top: 1900px;
 }
+
+.viewall a:hover{
+    color: blue;
+    text-decoration: underline;
+}
 /* button for view all designs.
- */
+*/
 .preamble{
     position: relative;
     width: 60vw;
@@ -152,15 +143,16 @@ div.supporting{
 }
 
 .preamble p:last-of-type{
-    height: 250px;
+    margin-bottom: 250px;
 }
+/* made the text buble for preamble. */
 
-.explanation{
+.main.supporting .explanation{
     position: relative;
     width: 60vw;
     padding: 100px;
     z-index: 1;
-    margin-top: 1300px;
+    margin-top: 1500px;
     background-image: url('images/textPink.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -193,25 +185,140 @@ div.supporting{
     color: white;
 }
 
-
 .explanation p:first-of-type{
     margin-top: 100px;
 }
 
 .explanation p:last-of-type{
-    height: 250px;
+    margin-bottom: 250px;
+}
+/* Technically the same as the the text box above but different background and size. */
+
+.main.supporting .participation{
+    position: relative;
+    width: 60vw;
+    padding: 100px;
+    z-index: 1;
+    margin-top: 150px;
+    background-image: url('images/textBlue.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: -40px;
 }
 
-/* div > p:not(".preamble p"){
+.participation p{
+    position: relative;
     color: white;
     font-family: "Roboto Slab", serif;
     width: 39.2vw;
     font-size: 25px;
     margin-left: -1vw;
     padding-left: 9vw;
-    opacity: 0%;
-} */
-
-a title:visited {
-    color: green;
 }
+
+.participation h3{
+    top: -300px;
+    left: 20px;
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 50vw;
+    height: 377px;
+    color: white;
+}
+
+.participation p:first-of-type{
+    margin-top: 150px;
+}
+
+.participation p:last-of-type{
+    margin-bottom: 250px;
+}
+
+.main.supporting .benefits{
+    position: relative;
+    width: 60vw;
+    padding: 100px;
+    z-index: 1;
+    margin-top: 150px;
+    background-image: url('images/textBlue.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.benefits p{
+    position: relative;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    width: 39.2vw;
+    font-size: 25px;
+    margin-left: 50%;
+    padding-left: 9vw;
+
+ .benefits h3{
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 50vw;
+    height: 377px;
+    color: white;
+}
+
+.benefits p:first-of-type{
+    margin-top: 150px;
+}
+
+.benefits p:last-of-type{
+    margin-bottom: 250px;
+}
+
+
+.design-selection .design-name, .designer-name{
+    color: #FFE600;
+}
+
+/* div p:first-of-type{
+    background-image: url('images/textBlue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 966px; 
+    position: absolute;
+    text-align: center;
+    width: 67vw;
+    }
+    
+    div.preamble p:first-of-type::after{
+        content: "Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible";
+        }
+        
+        div p:not(p:first-of-type){
+            opacity: 0%;
+            
+            } */
+
+/* div.page-wrapper h3{
+    font-family: "Passion One", sans-serif;
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 140px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 52.5vw;
+    height: 377px;
+    color: white;
+} */
