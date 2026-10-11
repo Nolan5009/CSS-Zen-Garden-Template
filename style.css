@@ -2,28 +2,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
-    background-image: url('images/backgroundImg.png');
+
     background-color: black;
     overflow-x: hidden;
+}
+/* just setting the background color and removing the bottom scroll */
+
+*:link:not('.viewall a'){
+    background-color: yellow;
+}
+
+header[role="banner"] h1:first-child{
+    opacity: 0%;
+}
+/* changeds the original's opacity to 0 because I have an illustration for the title. */
+
+#zen-intro{
+    background-image: url('images/backgroundImg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    resize: both;
-    height: 200vh;
+    height: 2113px;
+    box-sizing: border-box;
 }
+/* added the hero image. */
 
-.preamble > h3 ::after{
+/* .preamble > h3 ::after{
     background-color: red;
     height: 100px;
     width: 100px;
     content: "";
     position: absolute;
-}
+} */
 
 div.pagewrapper {
     display: flex;
     flex-flow: column;
 }
+/* made the items in it go straight down. */
+
 
 body .intro{
     display: flex;
@@ -33,7 +50,6 @@ body .intro{
 .intro{
     display: flex;
     flex-direction: column;
-    margin-top: 600px;
 }
 
 div.supporting{
@@ -41,7 +57,28 @@ div.supporting{
     flex-direction: column;
 }
 
-div.page-wrapper h3{
+
+/* div p:first-of-type{
+    background-image: url('images/textBlue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 966px; 
+    position: absolute;
+    text-align: center;
+    width: 67vw;
+    }
+    
+    div.preamble p:first-of-type::after{
+        content: "Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible";
+        }
+        
+        div p:not(p:first-of-type){
+            opacity: 0%;
+            
+            } */
+
+/* div.page-wrapper h3{
     font-family: "Passion One", sans-serif;
     background-image: url('images/pink-SubTitle.png');
     background-repeat: no-repeat;
@@ -53,25 +90,125 @@ div.page-wrapper h3{
     width: 52.5vw;
     height: 377px;
     color: white;
-}
+} */
 
-.preamble > p::after {
+.viewall a{
+    position: absolute;
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    width: 40vw;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 70px;  
+    padding: 100px;
+    left: 23%;
+    text-align: center;
+    top: 1900px;
+}
+.preamble{
+    position: relative;
+    width: 60vw;
+    padding: 100px;
+    z-index: 1;
+    margin-top: 2213px;
     background-image: url('images/textBlue.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: 966px;
-    position: absolute;
-    content: "";
+    background-size: 100% 100%;
+    left: -40px;
 }
 
-div.page-wrapper p{
+
+.preamble h3:only-of-type{
+    top: -350px;
+    left: 20px;
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 50vw;
+    height: 377px;
+    color: white;
+}
+
+.preamble p{
+    position: relative;
     color: white;
     font-family: "Roboto Slab", serif;
     width: 39.2vw;
+    font-size: 25px;
     margin-left: -1vw;
     padding-left: 9vw;
 }
+
+.preamble p:first-of-type{
+    margin-top: 100px;
+}
+
+.preamble p:last-of-type{
+    height: 250px;
+}
+
+.explanation{
+    position: relative;
+    width: 60vw;
+    padding: 100px;
+    z-index: 1;
+    margin-top: 1300px;
+    background-image: url('images/textPink.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: -40px;
+}
+
+.explanation p{
+    position: relative;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    width: 39.2vw;
+    font-size: 25px;
+    margin-left: -1vw;
+    padding-left: 9vw;
+}
+
+.explanation h3{
+    top: -350px;
+    left: 20px;
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 50vw;
+    height: 377px;
+    color: white;
+}
+
+
+.explanation p:first-of-type{
+    margin-top: 100px;
+}
+
+.explanation p:last-of-type{
+    height: 250px;
+}
+
+/* div > p:not(".preamble p"){
+    color: white;
+    font-family: "Roboto Slab", serif;
+    width: 39.2vw;
+    font-size: 25px;
+    margin-left: -1vw;
+    padding-left: 9vw;
+    opacity: 0%;
+} */
 
 a title:visited {
     color: green;
