@@ -50,30 +50,6 @@ header[role="banner"] h1:first-child{
     position: absolute;
 } */
 
-div.pagewrapper {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-}
-/* made the items in it go straight down. */
-
-
-body .intro{
-    display: flex;
-    flex-direction: column;
-}
-
-.intro{
-    display: flex;
-    flex-direction: column;
-}
-
-div.supporting{
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .viewall a{
     position: absolute;
@@ -242,31 +218,85 @@ div.supporting{
 
 .main.supporting .benefits{
     position: relative;
-    width: 60vw;
+    width: 39.2vw;
     padding: 100px;
     z-index: 1;
     margin-top: 150px;
-    background-image: url('images/textBlue.png');
+    margin-left: 7%;
+    margin-right: 0px;
+    background-image: url('images/textPink.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.benefits h3{
+    top: -300px;
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    padding: 100px;
+    z-index: 1;
+    width: 40vw;
+    margin-left: 0%;
+    color: white;
+
+}
+
 
 .benefits p{
     position: relative;
     color: white;
     font-family: "Roboto Slab", serif;
-    width: 39.2vw;
+    width: 33vw;
     font-size: 25px;
-    margin-left: 50%;
-    padding-left: 9vw;
+    margin-left: 10px;
+}
 
- .benefits h3{
-    position: absolute;
-    top: -300px;
-    left: 50%;
-    background-image: url('images/blue-SubTitle.png');
+
+.benefits p:first-of-type{
+    margin-top: 50px;
+}
+
+.benefits p:last-of-type{
+    margin-bottom: 100px;
+}
+
+.design-selection .design-name, .designer-name{
+    color: #FFE600;
+}
+
+.main.supporting .requirements{
+    position: relative;
+    width: 90vw;
+    padding: 100px;
+    z-index: 1;
+    margin-top: 150px;
+    background-image: url('images/textBlue.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
+    left: -40px;
+}
+
+.requirements p:not(:last-child){
+    position: relative;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    width: 60vw;
+    font-size: 25px;
+    margin-left: -1vw;
+    padding-left: 9vw;
+}
+
+.requirements h3{
+    top: -300px;
+    left: 20px;
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
     font-size: 70px;
     text-align: center;
     padding: 100px;
@@ -276,17 +306,41 @@ div.supporting{
     color: white;
 }
 
-.benefits p:first-of-type{
+.requirements p:first-of-type{
     margin-top: 150px;
 }
 
-.benefits p:last-of-type{
-    margin-bottom: 250px;
+.requirements p:nth-last-of-type(2){
+    margin-bottom: 270px;
 }
 
+footer{
+    order: 1;
+    background-image: url('images/FOOTER.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100vw;
+    height: 855px;
+    display: flex;
+    margin-top: 1000px;
+}
 
-.design-selection .design-name, .designer-name{
-    color: #FFE600;
+.requirements p:nth-child(6){
+    margin-top: 1000px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 50px;
+    justify-content: center;
+    order: 1;
+}
+
+footer a{
+    justify-content: space-around;
+    justify-content: center;
+    align-content: flex-end;
+    width: 100vw;
+    font-size: 60px;
 }
 
 /* div p:first-of-type{
