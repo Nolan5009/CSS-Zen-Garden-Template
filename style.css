@@ -456,6 +456,7 @@ div h3.archives{
     background-image: url('images/pink-SubTitle.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
     width: 30vw;
     text-align: center;
     padding-top: 100px;
@@ -469,10 +470,11 @@ div h3.archives{
     color: green;
 }
 
-[title|="Li"] {
+[title="Links to great sites with information on using CSS."] {
     background-image: url('images/blue-SubTitle.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
     width: 30vw;
     text-align: center;
     padding-top: 100px;
@@ -482,7 +484,47 @@ div h3.archives{
     margin-bottom: 100px;
 }
 
+[title="A list of Frequently Asked Questions about the Zen Garden."] {
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 30vw;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
 
+[title="Send in your own CSS file."] {
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 30vw;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+[title="View translated versions of this page."] {
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 30vw;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
 
 li.next a:only-child{
     opacity: 0%;
