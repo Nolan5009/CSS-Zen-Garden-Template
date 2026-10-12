@@ -6,31 +6,44 @@ body{
     background-color: black;
     overflow-x: hidden;
 }
+
+:root{
+    background-color: #080808;
+}
+
+h3, p, a:not(.requirements p:last-child){
+    color: white;
+}
 /* just setting the background color and removing the bottom scroll */
 
-/* body.page-wrapper{
-    position:relative
-    display: flex;
+h3::first-letter{
+    color: blue;
 }
 
-*:not(.design-selection, .resources){
-    justify-content: flex-start;
+
+
+*:link:not(.viewall a){
+    color: rgb(0, 200, 255);
 }
 
-page-wrapper .design-selection, .resources{
-    position:absolute;
-    justify-content: flex-end;
-    order: 1;
-} */
-
-*:link:not('.viewall a'){
-    background-color: yellow;
+*::selection{
+    background: blue;
+    color: rgb(255, 60, 197);
 }
 
 header[role="banner"] h1:first-child{
     opacity: 0%;
 }
 /* changeds the original's opacity to 0 because I have an illustration for the title. */
+
+a:active:not(.viewall){
+    text-decoration: wavy;
+    color: #FFE600;
+}
+
+a::first-line{
+    color: #080808;
+}
 
 #zen-intro{
     background-image: url('images/backgroundImg.png');
@@ -42,13 +55,13 @@ header[role="banner"] h1:first-child{
 }
 /* added the hero image. */
 
-/* .preamble > h3 ::after{
+.preamble > h3 ::after{
     background-color: red;
     height: 100px;
     width: 100px;
     content: "";
     position: absolute;
-} */
+}
 
 
 .viewall a{
@@ -64,6 +77,7 @@ header[role="banner"] h1:first-child{
     text-decoration: none;
     color: white;
     padding: 100px;
+    padding-top: 120px;
     left: 23%;
     text-align: center;
     top: 1900px;
@@ -101,12 +115,10 @@ header[role="banner"] h1:first-child{
     z-index: 1;
     width: 50vw;
     height: 377px;
-    color: white;
 }
 
 .preamble p{
     position: relative;
-    color: white;
     font-family: "Roboto Slab", serif;
     width: 39.2vw;
     font-size: 25px;
@@ -137,7 +149,6 @@ header[role="banner"] h1:first-child{
 
 .explanation p{
     position: relative;
-    color: white;
     font-family: "Roboto Slab", serif;
     width: 39.2vw;
     font-size: 25px;
@@ -158,7 +169,6 @@ header[role="banner"] h1:first-child{
     z-index: 1;
     width: 50vw;
     height: 377px;
-    color: white;
 }
 
 .explanation p:first-of-type{
@@ -184,7 +194,6 @@ header[role="banner"] h1:first-child{
 
 .participation p{
     position: relative;
-    color: white;
     font-family: "Roboto Slab", serif;
     width: 39.2vw;
     font-size: 25px;
@@ -205,7 +214,6 @@ header[role="banner"] h1:first-child{
     z-index: 1;
     width: 50vw;
     height: 377px;
-    color: white;
 }
 
 .participation p:first-of-type{
@@ -215,7 +223,7 @@ header[role="banner"] h1:first-child{
 .participation p:last-of-type{
     margin-bottom: 250px;
 }
-
+/* participation box */
 .main.supporting .benefits{
     position: relative;
     width: 39.2vw;
@@ -241,14 +249,11 @@ header[role="banner"] h1:first-child{
     z-index: 1;
     width: 40vw;
     margin-left: 0%;
-    color: white;
-
 }
 
 
 .benefits p{
     position: relative;
-    color: white;
     font-family: "Roboto Slab", serif;
     width: 33vw;
     font-size: 25px;
@@ -263,7 +268,7 @@ header[role="banner"] h1:first-child{
 .benefits p:last-of-type{
     margin-bottom: 100px;
 }
-
+/* benifits box */
 .design-selection .design-name, .designer-name{
     color: #FFE600;
 }
@@ -282,7 +287,6 @@ header[role="banner"] h1:first-child{
 
 .requirements p:not(:last-child){
     position: relative;
-    color: white;
     font-family: "Roboto Slab", serif;
     width: 60vw;
     font-size: 25px;
@@ -303,7 +307,6 @@ header[role="banner"] h1:first-child{
     z-index: 1;
     width: 50vw;
     height: 377px;
-    color: white;
 }
 
 .requirements p:first-of-type{
@@ -312,6 +315,158 @@ header[role="banner"] h1:first-child{
 
 .requirements p:nth-last-of-type(2){
     margin-bottom: 270px;
+}
+/* requirements box */
+.design-selection h3:first-child{
+    opacity: 0%;
+}
+
+div h3.archives{
+    opacity: 0%;
+}
+/* getting rid of a section I did not have. */
+.design-selection ul{
+    display: flex;
+    position: absolute;
+    left: 70vw;
+    top: 2200px;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.design-selection ul li{
+    flex-direction: column;
+}
+.design-selection ul li:first-child{
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(2){
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(3){
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(4){
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(5){
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(6){
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-last-child(2){
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+.design-selection ul li:nth-of-type(8){
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 17vw;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+}
+/* sidebar boxed on the top */
+.zen-resources h3{
+    opacity: 0%;
+}
+.zen-resources ul{
+    display: flex;
+    position: absolute;
+    left: 65vw;
+    top: 4500px;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+[title~="View"]{
+    background-image: url('images/pink-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30vw;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+
+.css-resources [title|=Li]{
+    background-image: url('images/blue-SubTitle.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30vw;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+li.next a:only-child{
+    opacity: 0%;
 }
 
 footer{
@@ -323,25 +478,45 @@ footer{
     width: 100vw;
     height: 855px;
     display: flex;
-    margin-top: 1000px;
+    margin-top: 500px;
 }
 
 .requirements p:nth-child(6){
     margin-top: 1000px;
-    color: white;
     font-family: "Roboto Slab", serif;
     font-size: 50px;
     justify-content: center;
     order: 1;
 }
 
-footer a{
+footer a[href^="http"]{
     justify-content: space-around;
     justify-content: center;
     align-content: flex-end;
     width: 100vw;
     font-size: 60px;
 }
+/* footer */
+
+
+
+
+/* ideas that didnt work */
+/* body.page-wrapper{
+    position:relative
+    display: flex;
+}
+
+*:not(.design-selection, .resources){
+    justify-content: flex-start;
+}
+
+page-wrapper .design-selection, .resources{
+    position:absolute;
+    justify-content: flex-end;
+    order: 1;
+} */
+
 
 /* div p:first-of-type{
     background-image: url('images/textBlue.png');
