@@ -11,6 +11,10 @@ body{
     background-color: #080808;
 }
 
+a:focus{
+    text-decoration: solid;
+}
+
 h3, p, a:not(.requirements p:last-child){
     color: white;
 }
@@ -176,7 +180,6 @@ div ~ ul{
     position: absolute;
     font-size: 70px;
     text-align: center;
-
     padding: 177px 100px 200px;
     z-index: 1;
     width: 50vw;
@@ -444,7 +447,7 @@ div h3.archives{
 .zen-resources ul{
     display: flex;
     position: absolute;
-    left: 65vw;
+    left: 60vw;
     top: 4500px;
     font-size: 30px;
     flex-direction: column;
@@ -454,14 +457,11 @@ div h3.archives{
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: 100%;
-    position: relative;
+    background-position: center center;
     width: 30vw;
     text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    padding: 10px 10px 180px 10px;
+    align-items: center;
 
     &:nth-child(even){
         background-image: url('images/pink-SubTitle.png');    
@@ -474,77 +474,6 @@ div h3.archives{
 [title]{
     color: green;
 }
-
-/* [title="View the source CSS file of the currently-viewed design."]{
-    background-image: url('images/pink-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    width: 30vw;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-} */
-
-
-/* [title="Links to great sites with information on using CSS."] {
-    background-image: url('images/blue-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    width: 30vw;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-}
-
-[title="A list of Frequently Asked Questions about the Zen Garden."] {
-    background-image: url('images/pink-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    width: 30vw;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-}
-
-[title="Send in your own CSS file."] {
-    background-image: url('images/blue-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    width: 30vw;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-}
-
-[title="View translated versions of this page."] {
-    background-image: url('images/pink-SubTitle.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-    width: 30vw;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-} */
 
 li.next a:only-child{
     opacity: 0%;
